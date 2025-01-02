@@ -1,80 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - Cardputer Setup</title>
-</head>
-<body>
-    <h1>Cardputer Setup Guide</h1>
+# Cardputer Setup Guide
 
-    <h2>Requirements</h2>
-    <ul>
-        <li>M5 Cardputer</li>
-        <li>SD Card</li>
-    </ul>
+## Requirements
+- M5 Cardputer
+- SD Card
 
-    <h2>1. Installation</h2>
+## 1. Installation
 
-    <h3>1.1 Preparing the SD Card</h3>
-    <p>Format the SD card to FAT32.</p>
+### 1.1 Preparing the SD Card
+Format the SD card to FAT32.
 
-    <h3>1.2 Installing M5 Burner</h3>
-    <ol>
-        <li>Visit the <a href="https://www.m5stack.com">M5Stack website</a>.</li>
-        <li>Navigate to the Software section and download the M5 Burner ZIP file.</li>
-        <li>Extract the ZIP and run <code>M5Burner.exe</code>. Update the software if prompted.</li>
-    </ol>
+### 1.2 Installing M5 Burner
+1. Visit the [M5Stack website](https://www.m5stack.com).
+2. Navigate to the Software section and download the M5 Burner ZIP file.
+3. Extract the ZIP and run `M5Burner.exe`. Update the software if prompted.
 
-    <img src=\"assets/Imagens/1.2.png\" alt=\"M5 Burner Installation\" />
+![M5 Burner Installation](assets/Imagens/1.2.png)
 
-    <h3>1.3 Installing M5Launcher</h3>
-    <ol>
-        <li>In M5 Burner, select the <strong>CARDPUTER</strong> tab.</li>
-        <li>Locate and download the <code>M5Launcher.bin</code> firmware.</li>
-        <li>Connect the Cardputer to your computer and click <strong>Burn</strong>.</li>
-        <li>Select the appropriate COM port and click <strong>Start</strong>. Avoid disconnecting during the flashing process.</li>
-    </ol>
-    <p>Once successfully installed, the firmware will be ready to use.</p>
+### 1.3 Installing M5Launcher
+1. In M5 Burner, select the **CARDPUTER** tab.
+2. Locate and download the `M5Launcher.bin` firmware.
+3. Connect the Cardputer to your computer and click **Burn**.
+4. Select the appropriate COM port and click **Start**. Avoid disconnecting during the flashing process.
 
-    <img src=\"assets/Imagens/1.3.png\" alt=\"Burning Firmware\" />
+Once successfully installed, the firmware will be ready to use.
 
-    <h3>1.4 Configuring M5Launcher</h3>
+![Burning Firmware](assets/Imagens/1.3.png)
 
-    <h4>1.4.1 SD Card Verification</h4>
-    <p>Ensure the SD option is accessible on the home screen. A green icon indicates readiness, while a gray icon indicates issues.</p>
+### 1.4 Configuring M5Launcher
 
-    <img src=\"assets/Imagens/1.4.1.png\" alt=\"SD Card Verification\" />
+#### 1.4.1 SD Card Verification
+Ensure the SD option is accessible on the home screen. A green icon indicates readiness, while a gray icon indicates issues.
 
-    <h4>1.4.2 Activating Web Interface</h4>
-    <p>Select the <strong>WUI</strong> icon to configure the web interface in one of the following modes:</p>
-    <ul>
-        <li><strong>My Network:</strong> Connect to an existing Wi-Fi network by providing credentials.</li>
-        <li><strong>AP Mode:</strong> Start an open Wi-Fi network hosted by the Cardputer.</li>
-    </ul>
+![SD Card Verification](assets/Imagens/1.4.1.png)
 
-    <p>After selecting a mode, the Cardputer will display an IP address for browser access. Use the provided login credentials to access the web interface.</p>
-    <p>The interface allows file management, storage monitoring, and firmware version checks.</p>
+#### 1.4.2 Activating Web Interface
+Select the **WUI** icon to configure the web interface in one of the following modes:
+- **My Network:** Connect to an existing Wi-Fi network by providing credentials.
+- **AP Mode:** Start an open Wi-Fi network hosted by the Cardputer.
 
-    <img src=\"assets/Imagens/1.4.2.png\" alt=\"Web Interface Setup\" />
+After selecting a mode, the Cardputer will display an IP address for browser access. Use the provided login credentials to access the web interface.
 
-    <h4>1.4.3 Downloading Secondary Firmwares</h4>
-    <p>To enable multi-boot, add necessary firmware binaries:</p>
-    <ol>
-        <li>Visit the GitHub repository of <code>Evil-Cardputer</code>: <a href="https://github.com/7h30th3r0n3/Evil-M5Core2/tree/main/binaries">Evil M5Core2 Binaries</a>.</li>
-        <li>Alternatively, download the firmware via the web interface under <strong>Online Firmware List</strong>.</li>
-        <li>Upload the <code>.bin</code> file to the Cardputer via the web interface.</li>
-    </ol>
+The interface allows file management, storage monitoring, and firmware version checks.
 
-    <h3>1.5 Installing Evil-Cardputer</h3>
-    <ol>
-        <li>Disable the web interface by clicking <strong>OK</strong>.</li>
-        <li>From the home menu, select <strong>SD</strong> and locate the uploaded <code>.bin</code>.</li>
-        <li>Choose <strong>Install</strong> and wait for the process to complete. The device will restart automatically.</li>
-    </ol>
+![Web Interface Setup](assets/Imagens/1.4.2.png)
 
-    <img src=\"assets/Imagens/1.5.png\" alt=\"Installing Evil-Cardputer\" />
+#### 1.4.3 Downloading Secondary Firmwares
+To enable multi-boot, add necessary firmware binaries:
+1. Visit the GitHub repository of `Evil-Cardputer`: [Evil M5Core2 Binaries](https://github.com/7h30th3r0n3/Evil-M5Core2/tree/main/binaries).
+2. Alternatively, download the firmware via the web interface under **Online Firmware List**.
+3. Upload the `.bin` file to the Cardputer via the web interface.
 
-    <p>Your Cardputer is now configured and ready for use!</p>
-</body>
-</html>
+### 1.5 Installing Evil-Cardputer
+1. Disable the web interface by clicking **OK**.
+2. From the home menu, select **SD** and locate the uploaded `.bin`.
+3. Choose **Install** and wait for the process to complete. The device will restart automatically.
+
+![Installing Evil-Cardputer](assets/Imagens/1.5.png)
+
+Your Cardputer is now configured and ready for use!
