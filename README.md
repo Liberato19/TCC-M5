@@ -27,6 +27,8 @@ Formate o cartão SD em Fat32.
 Se a instalação for bem-sucedida, o firmware estará pronto para uso.
 
 ![Burning Firmware](assets/Imagens/1.3.png)
+![Burning Firmware Step 2](assets/Imagens/1.3(2).png)
+![Burning Firmware Step 3](assets/Imagens/1.3(3).png)
 
 ### 1.4 – Configurações no M5Launcher
 
@@ -43,11 +45,13 @@ Selecione o ícone **WUI**. Você terá as seguintes opções:
 - **My Network:** Conecte-se a uma rede Wi-Fi existente, fornecendo as credenciais.
 - **AP Mode:** Inicie uma rede Wi-Fi aberta hospedada pelo Cardputer.
 
+![Activating Web Interface](assets/Imagens/1.4.2.png)
+![Activating Web Interface Step 2](assets/Imagens/1.4.2(2).png)
+![Activating Web Interface Step 3](assets/Imagens/1.4.2(3).png)
+
 Após escolher um método, o Cardputer exibirá um endereço IP que poderá ser acessado via navegador. Use as credenciais fornecidas pelo dispositivo para acessar a interface.
 
 Na interface web, é possível gerenciar arquivos, monitorar o armazenamento e verificar a versão do firmware.
-
-![Web Interface Setup](assets/Imagens/1.4.2.png)
 
 #### 1.4.3 - Download de Firmwares Secundários
 
@@ -58,6 +62,8 @@ Para habilitar o multi-boot, adicione os firmwares necessários:
 3. Faça o upload do arquivo `.bin` para o Cardputer via interface web.
 
 ![Downloading Secondary Firmware](assets/Imagens/1.4.3.png)
+![Downloading Secondary Firmware Step 2](assets/Imagens/1.4.3(2).png)
+![Downloading Secondary Firmware Step 3](assets/Imagens/1.4.3(3).png)
 
 ### 1.5 - Instalação do Evil-Cardputer
 
@@ -66,5 +72,7 @@ Para habilitar o multi-boot, adicione os firmwares necessários:
 3. Escolha **Install** e aguarde a conclusão da instalação. O dispositivo será reiniciado automaticamente.
 
 ![Installing Evil-Cardputer](assets/Imagens/1.5.png)
+![Installing Evil-Cardputer Step 2](assets/Imagens/1.5(2).png)
+![Installing Evil-Cardputer Step 3](assets/Imagens/1.5(3).png)
 
 O Cardputer está configurado e pronto para uso!
