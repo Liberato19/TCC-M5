@@ -28,7 +28,7 @@ Se a instalação for bem-sucedida, o firmware estará pronto para uso.
 
 ![Burning Firmware](assets/Imagens/1.3.png)
 ![Burning Firmware Step 2](assets/Imagens/1.3(2).png)
-![Burning Firmware Step 3](assets/Imagens/1.3(3).png)
+![Burning Firmware Step 3](assets/Imagens/1.3.(3).png)
 
 ### 1.4 – Configurações no M5Launcher
 
