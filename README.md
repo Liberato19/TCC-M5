@@ -76,3 +76,25 @@ Para habilitar o multi-boot, adicione os firmwares necessários:
 ![Installing Evil-Cardputer Step 3](assets/Imagens/1.5(3).png)
 
 O Cardputer está configurado e pronto para uso!
+
+## 2 - Guia de Uso
+Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer.
+
+### Menu
+
+#### Scan WiFi
+
+- Realiza um scan a procura de WiFis próximos.
+
+
+#### Select Network
+
+- Escolhe uma rede WiFi da lista de WiFis escaneados , utilize as teclas de direita e esquerda para navegar no menu.
+
+#### Clone & Details
+
+- Informações sobre a rede escolhida, você pode clonar o SSID neste menu.
+
+#### Start Captive Portal
+
+-Utilizando o `normal.html`, inicia uma rede de wifi que imita uma tela de login junto de uma tela de erro.
