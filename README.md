@@ -80,21 +80,41 @@ O Cardputer está configurado e pronto para uso!
 ## 2 - Guia de Uso
 Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer.
 
-### Menu
+### 2.1 - Menu
 
-#### Scan WiFi
+#### 2.2 - Scan WiFi
 
 - Realiza um scan a procura de WiFis próximos.
 
 
-#### Select Network
+#### 2.3 - Select Network
 
 - Escolhe uma rede WiFi da lista de WiFis escaneados , utilize as teclas de direita e esquerda para navegar no menu.
 
-#### Clone & Details
+#### 2.4 - Clone & Details
 
 - Informações sobre a rede escolhida, você pode clonar o SSID neste menu.
 
-#### Start Captive Portal
+#### 2.5 - Start Captive Portal
 
 -Utilizando o `normal.html`, inicia uma rede de wifi que imita uma tela de login junto de uma tela de erro.
+
+#### 2.6 - Special Accessible Pages
+
+- **Credentials**: Lista de credenciais capturadas.
+- **Upload file On SD**: Fornece uma forma de carregar e extrair arquivos do cartão SD.
+- **Check Sd File**: Fornece , download and delete files on the SD card.
+- **Setup Portal**: Fornece uma página para trocar o SSID, senha e página do Access Point.
+- **Run BadUSB Script**: Executa o script de BadUSB ao clicar.
+- **Scan Network**: Executa um scan completo na rede.
+- **Monitor Status**: Monitora por pacotes de rede.
+
+essas páginas podem ser acessadas de diversas maneiras.
+
+
+#### 2.7 - Stop Captive Portal
+
+- **Deactivate**: Desativa o Captive Portal e DNS.
+
+- 
+
