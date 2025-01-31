@@ -83,27 +83,32 @@ Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer.
 ### 2.1 - Menu
 
 - Menu Principal do firmware
+  
 ![Menu](assets/Imagens/2.1.png)
 
 #### 2.2 - Scan WiFi
 
 - Realiza um scan a procura de WiFis próximos.
+  
 ![Scan WiFi](assets/Imagens/2.2.png)
 
 
 #### 2.3 - Select Network
 
 - Escolhe uma rede WiFi da lista de WiFis escaneados , utilize as teclas de direita e esquerda para navegar no menu.
+  
 ![Select Network](assets/Imagens/2.3.png)
 
 #### 2.4 - Clone & Details
 
 - Informações sobre a rede escolhida, você pode clonar o SSID neste menu.
+  
 ![Clone & Details](assets/Imagens/2.4.png)
 
 #### 2.5 - Start Captive Portal
 
--Utilizando o `normal.html`, inicia uma rede de wifi que imita uma tela de login junto de uma tela de erro.
+- Utilizando o `normal.html`, inicia uma rede de wifi que imita uma tela de login junto de uma tela de erro.
+
 ![Start Captive Portal](assets/Imagens/2.5.png)
 
 #### 2.6 - Special Accessible Pages
