@@ -81,6 +81,7 @@ O Cardputer está configurado e pronto para uso!
 Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer.
 
 ### 2.1 - Menu
+
 - Menu Principal do firmware
 ![Menu](assets/Imagens/2.1.png)
 
