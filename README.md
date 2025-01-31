@@ -1,15 +1,15 @@
-# Requisitos
+# Requisitos.
 
 - M5 Cardputer
 - Cartão SD
 
-## 1 – Instalação
+## 1 – Instalação.
 
-### 1.1 - Preparação do cartão SD
+### 1.1 - Preparação do cartão SD.
 
 Formate o cartão SD em Fat32.
 
-### 1.2 - Instalação do M5 Burner
+### 1.2 - Instalação do M5 Burner.
 
 1. Acesse o site da M5Stack e procure pelo M5 Burner na aba de Softwares.
 2. Faça o download do arquivo ZIP.
@@ -17,7 +17,7 @@ Formate o cartão SD em Fat32.
 
 ![M5 Burner Installation](assets/Imagens/1.2.png)
 
-### 1.3 – Instalação do M5Launcher
+### 1.3 – Instalação do M5Launcher.
 
 1. Dentro do M5 Burner, selecione a aba **CARDPUTER**.
 2. Localize e faça o download do firmware `M5Launcher.bin`.
@@ -30,15 +30,15 @@ Se a instalação for bem-sucedida, o firmware estará pronto para uso.
 ![Burning Firmware Step 2](assets/Imagens/1.3(2).png)
 ![Burning Firmware Step 3](assets/Imagens/1.3.(3).png)
 
-### 1.4 – Configurações no M5Launcher
+### 1.4 – Configurações no M5Launcher.
 
-#### 1.4.1 - Verificação do cartão SD
+#### 1.4.1 - Verificação do cartão SD.
 
 Na tela inicial, verifique se a opção **SD** está acessível. O ícone deve estar verde. Caso contrário, estará cinza.
 
 ![SD Card Verification](assets/Imagens/1.4.1.png)
 
-#### 1.4.2 - Ativar modo Web Interface
+#### 1.4.2 - Ativar modo Web Interface.
 
 Selecione o ícone **WUI**. Você terá as seguintes opções:
 
@@ -53,7 +53,7 @@ Após escolher um método, o Cardputer exibirá um endereço IP que poderá ser 
 
 Na interface web, é possível gerenciar arquivos, monitorar o armazenamento e verificar a versão do firmware.
 
-#### 1.4.3 - Download de Firmwares Secundários
+#### 1.4.3 - Download de Firmwares Secundários.
 
 Para habilitar o multi-boot, adicione os firmwares necessários:
 
@@ -65,7 +65,7 @@ Para habilitar o multi-boot, adicione os firmwares necessários:
 ![Downloading Secondary Firmware Step 2](assets/Imagens/1.4.3(2).png)
 ![Downloading Secondary Firmware Step 3](assets/Imagens/1.4.3(3).png)
 
-### 1.5 - Instalação do Evil-Cardputer
+### 1.5 - Instalação do Evil-Cardputer.
 
 1. Desative a interface web clicando em **OK**.
 2. No menu inicial, selecione **SD** e localize o arquivo `.bin` enviado.
@@ -77,53 +77,81 @@ Para habilitar o multi-boot, adicione os firmwares necessários:
 
 O Cardputer está configurado e pronto para uso!
 
-## 2 - Guia de Uso
-Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer.
+## 2 - Guia de Uso.
+Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer, neste guia vamos apenas abordar as funções que sejam relacionadas ao tema, para mais informações acesse o [guia oficial do firmware](https://github.com/7h30th3r0n3/Evil-M5Project/blob/main/README.md).
 
-### 2.1 - Menu
+### 2.1 - Menu.
 
 - Menu Principal do firmware
   
 ![Menu](assets/Imagens/2.1.png)
 
-#### 2.2 - Scan WiFi
+#### 2.2 - Scan WiFi.
 
 - Realiza um scan a procura de WiFis próximos.
 
-#### 2.3 - Select Network
+#### 2.3 - Select Network.
 
 - Escolhe uma rede WiFi da lista de WiFis escaneados , utilize as teclas de direita e esquerda para navegar no menu.
   
 ![Select Network](assets/Imagens/2.2.png)
 
-#### 2.4 - Clone & Details
+#### 2.4 - Clone & Details.
 
 - Informações sobre a rede escolhida, você pode clonar o SSID neste menu.
   
 ![Clone & Details](assets/Imagens/2.3.png)
 
-#### 2.5 - Start Captive Portal
+#### 2.5 - Set WiFi SSID.
 
-- Utilizando o `normal.html`, inicia uma rede de wifi que imita uma tela de login junto de uma tela de erro.
+- Configure o SSID da rede a ser criada.
 
-![Start Captive Portal](assets/Imagens/2.4.png)
+#### 2.6 - Set WiFi Password.
 
-#### 2.6 - Special Accessible Pages
-
-- **Credentials**: Lista de credenciais capturadas.
-- **Upload file On SD**: Fornece uma forma de carregar e extrair arquivos do cartão SD.
-- **Check Sd File**: Fornece , download and delete files on the SD card.
-- **Setup Portal**: Fornece uma página para trocar o SSID, senha e página do Access Point.
-- **Run BadUSB Script**: Executa o script de BadUSB ao clicar.
-- **Scan Network**: Executa um scan completo na rede.
-- **Monitor Status**: Monitora por pacotes de rede.
-
-essas páginas podem ser acessadas de diversas maneiras.
+- Configure a senha da rede a ser criada.
 
 
-#### 2.7 - Stop Captive Portal
+#### 2.7 - Set WiFi Mac Adress.
 
-- **Deactivate**: Desativa o Captive Portal e DNS.
+- Configure o endereço MAC da rede a ser criada.
+
+#### 2.8 - Start Captive Portal.
+
+- Utilizando o `normal.html`, inicia uma rede de wifi e imita uma tela de login junto de uma tela de erro.
+
+![Clone & Details](assets/Imagens/2.8.png)
+![Clone & Details](assets/Imagens/2.8(1).png)
+![Clone & Details](assets/Imagens/2.8(2).png)
+
+#### 2.7 - Stop Captive Portal.
+
+- Desativa o Captive Portal e DNS.
+
+#### 2.8 - Change Portal.
+
+- Troca a página HTML do Captive Portal por uma armazenada no cartão SD.
+
+#### 2.8 - Change Portal.
+
+- Troca a página HTML do Captive Portal por uma armazenada no cartão SD.
+
+#### 2.9 - Check Credentials.
+
+- Lista as credenciais adquiridas com a pagina de login falsa.
+
+#### 2.10 - Delet All Creds.
+
+- Apaga as credenciais adquiridas.
+
+#### 2.10 - Monitor Status.
+
+- Monitora o status do Captive Portal como número de clientes conectados, SSID e IP e número de credenciais adquiridas.
+
+
+
+
+
+
 
 
 
