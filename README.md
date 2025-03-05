@@ -160,7 +160,7 @@ Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer, 
 - Semelhante ao Probe Sniffing, mas exibe um menu após a finalização da varredura para escolher um SSID específico. Quando um SSID é selecionado, um portal com o mesmo SSID é implantado. Se o ponto de acesso original for uma Rede Aberta e a máquina for vulnerável, ela deve se conectar automaticamente à rede. Dependendo da máquina, o portal pode ser exibido automaticamente.
 Se um cliente estiver presente no momento em que a varredura termina ou é interrompida, o portal permanece aberto; caso contrário, ele é desligado. (Pode ser usado com senha se configurado na interface web).
 
-#### 2.14 - Karma Attack.
+#### 2.14 - Karma Auto.
 
 - Semelhante ao Karma Attack, mas tenta automaticamente a primeira probe detectada. Se nenhum cliente se conectar após 15 segundos, o Cardputer retorna ao modo de sniffing para tentar outra probe capturada, continuando esse ciclo até que o usuário interrompa o processo.
 Também pode ser usado com senha se configurado na interface web. Se você tiver uma senha, mas não souber em qual AP ela funciona, pode testá-la com diferentes probe requests para verificar se o Karma funciona e obter o SSID.
