@@ -147,8 +147,93 @@ Siga estas etapas para utilizar com eficiência cada recurso do Evil-Cardputer, 
 
 - Monitora o status do Captive Portal como número de clientes conectados, SSID e IP e número de credenciais adquiridas.
 
+#### 2.11 - Probe Attack.
 
+- Envia Probe Requests falsas e aleatórias em todos os canais
 
+#### 2.12 - Probe Sniffing.
+
+- Probe Sniffing inivia um probe scan que captura os SSID recebidos que podem ser armazenados e reutilizados. Limite de 150 probes.
+
+#### 2.13 - Karma Attack.
+
+- Semelhante ao Probe Sniffing, mas exibe um menu após a finalização da varredura para escolher um SSID específico. Quando um SSID é selecionado, um portal com o mesmo SSID é implantado. Se o ponto de acesso original for uma Rede Aberta e a máquina for vulnerável, ela deve se conectar automaticamente à rede. Dependendo da máquina, o portal pode ser exibido automaticamente.
+Se um cliente estiver presente no momento em que a varredura termina ou é interrompida, o portal permanece aberto; caso contrário, ele é desligado. (Pode ser usado com senha se configurado na interface web).
+
+#### 2.14 - Karma Attack.
+
+- Semelhante ao Karma Attack, mas tenta automaticamente a primeira probe detectada. Se nenhum cliente se conectar após 15 segundos, o Cardputer retorna ao modo de sniffing para tentar outra probe capturada, continuando esse ciclo até que o usuário interrompa o processo.
+Também pode ser usado com senha se configurado na interface web. Se você tiver uma senha, mas não souber em qual AP ela funciona, pode testá-la com diferentes probe requests para verificar se o Karma funciona e obter o SSID.
+Essa funcionalidade é inspirada no projeto Pwnagotchi, mas combinando probe request e karma attack, permitindo um ataque completo aos dispositivos próximos.
+Você pode adicionar SSIDs à KarmaAutoWhitelist da seguinte forma:
+KarmaAutoWhitelist=notmybox,thisonetoo
+As probes dessas redes serão ignoradas e uma mensagem será enviada via serial notificando que a rede está na lista de permissões. Isso também funciona no Probe Sniffing e no Karma Attack.
+
+#### 2.15 - Karma Spear.
+
+- Semelhante ao Karma Auto, mas usa SSIDs abertos capturados por wardriving. Você também pode adicionar SSIDs personalizados ao arquivo KarmaList.txt.
+
+#### 2.16 - Selecionar Probe.
+
+- Menu para selecionar um SSID de probe capturado anteriormente e implantá-lo. A lista é limitada a 150 probes.
+
+#### 2.17 - Deletar Probe.
+
+- Menu para excluir um SSID de probe capturado anteriormente. A lista é limitada a 150 probes.
+
+#### 2.18 - Deletar Todas as Probes.
+
+- Exclui todas as probes capturadas anteriormente. Basicamente, redefine o arquivo probes.txt no SD.
+
+#### 2.19 - Wardriving.
+
+- Escaneia redes Wi-Fi ao redor e as vincula à posição no formato Wigle. Você pode fazer upload para o Wigle para ganhar pontos e gerar um arquivo KML para visualização no Google Earth. É necessário um módulo GPS para essa funcionalidade.
+
+#### 2.20 - Beacon Spam.
+
+- O Beacon Spam cria múltiplas redes em todos os canais, exibindo vários SSIDs na busca Wi-Fi e confundindo equipamentos de sniffing. Você pode utilizar Beacons personalizados por meio de um arquivo de configuração.
+
+#### 2.21 - Client Sniff e Deauth
+
+- Na Tela:
+    AP: Número de APs próximos
+    C: Canal atual
+    H: Número de novos arquivos PCAP criados (contendo pelo menos um EAPOL e um beacon frame)
+    E: Número de pacotes EAPOL capturados
+    D: 0 = apenas sniffing, sem deauth / 1 = deauth ativo
+    DF: Modo Rápido
+O que ele faz:
+    Escaneia APs próximos
+    Detecta se um cliente está conectado
+    Envia frames de deautenticação em broadcast para cada AP com clientes conectados
+    Envia frames de deauth spoofed para cada cliente
+    Sniffa pacotes EAPOL ao mesmo tempo
+    Retorna ao escaneamento de APs próximos
+  
+#### 2.22 - Deauther
+
+- Envia frames de deautenticação e sniffa pacotes EAPOL ao mesmo tempo.
+    Selecione a rede alvo
+    Vá para Deauther
+    Responda às perguntas solicitadas
+    Inicie o ataque de deauth e sniff simultaneamente
+
+#### 2.23 - EAPOL Sniffing
+
+- Captura pacotes EAPOL (4-way handshake e PMKID)
+Parâmetros:
+    Canal: Canal atual
+    Modo:
+        Estático → Fica no mesmo canal
+        Automático → Alterna entre os canais
+    PPS: Pacotes por segundo no canal (se não houver atividade, o valor pode ficar travado até que um novo pacote seja recebido)
+    H: Número de novos PCAPs criados (mínimo um EAPOL e um beacon frame)
+    EAPOL: Número de pacotes EAPOL capturados
+    DEAUTH: Número de pacotes Deauth detectados
+    RSSI: Potência do sinal (indica a distância do transmissor)
+
+Se um pacote EAPOL for detectado, ele é armazenado em um arquivo PCAP, junto com o MAC do AP e beacon frames com o BSSID. Você pode usar ferramentas como Aircrack-ng ou Hashcat para quebrar a senha da rede Wi-Fi a partir de um 4-way handshake ou PMKID.
+Detecta pacotes de deautenticação próximos, quando um dispositivo se desconecta de um AP ele envia um pacote de deautenticação para encerrar a conexão. Esses pacotes podem ser falsificados por atacantes para desconectar dispositivos e forçá-los a se reconectar, permitindo a captura do 4-way handshake. Um grande número de pacotes de deauth não é normal e pode indicar um possível ataque Wi-Fi.
 
 
 
